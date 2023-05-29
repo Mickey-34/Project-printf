@@ -36,7 +36,7 @@ int (*a)(va_list, char[], int, int, int, int);
 
 typedef struct jir jir_r;
 int _printf(const char *format, ...);
-int print_handle(const char *jir, int *k,
+int handle_print(const char *jir, int *k,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
 /****************** ALL FUNCTIONS ******************/
