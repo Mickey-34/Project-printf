@@ -1,6 +1,6 @@
 #ifndef MAIN_H 
 #define MAIN_H
- #include <stdarg.h> 
+#include <stdarg.h> 
 #include <stdio.h> 
 #include <unistd.h>
 #define UNUSED(x) (void)(x)
@@ -14,7 +14,7 @@
 #define F_MINUS 1
 
 /* SIZES */
- #define S_SHORT 1
+#define S_SHORT 1
 #define S_LONG 2
 
 /**
