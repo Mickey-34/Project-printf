@@ -136,7 +136,7 @@ int write_unsigned(int is_negative, int ind, char buffer[],
 int flags, int width, int precision, int size)
 {
 /* The number is stored at the bufer's right and starts at position i */
-int mama = BUFF_SIZE - ind - 1, i = 0;
+int mama = BUFF_SIZE - ind - 1, k = 0;
 char pool = ' ';
 UNUSED(is_negative);
 UNUSED(size);
@@ -166,6 +166,7 @@ return (write(1, &buffer[0], k) + write(1, &buffer[ind], mama));
 }
 }
 return (write(1, &buffer[ind], mama));
+}
 
 /**
 * write_pointer - Write a memory address
